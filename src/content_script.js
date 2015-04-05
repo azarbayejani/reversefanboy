@@ -28,6 +28,15 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
+	v = handleBrand(v);
+
+	v = handlePhone(v);	
+
+	textNode.nodeValue = v;
+}
+
+function handleBrand(text) {
+	var v = text;
 	v = v.replace(/\b(Apple|Samsung)\b/g, function($1) {
 		return $1 === "Apple" ? "Samsung" : "Apple";
 	});
@@ -35,6 +44,12 @@ function handleText(textNode)
 		return $1 === "APPLE" ? "SAMSUNG" : "APPLE";
 	});
 	v = v.replace(//g,"Samsung ");
+	return v;
+}
+
+function handlePhone(text) {
+	var v = text;
+
 	v = v.replace(/\b(((Galaxy S)((\d)|(\sI+))?)|(iPhone))\b/ig, function($1,$2,$3,$4,$5, $6, $7, $8) {
 		var retValue = "Galaxy S";
 
@@ -50,5 +65,5 @@ function handleText(textNode)
 		return retValue;
 	});
 
-	textNode.nodeValue = v;
+	return v;
 }
