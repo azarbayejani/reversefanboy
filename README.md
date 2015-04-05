@@ -6,7 +6,7 @@ Replaces 'Apple' and associated products with 'Samsung' and associated products.
 
 ##Examples
 
-![iPhone 3G](https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xap1/t31.0-8/11083763_4617144986445_3895672617867782186_o.jpg)
+![iPhone 3G](https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/11080659_4617144626436_4766260106338457246_o.jpg)  
 
 Apple iPhone 3G becomes Samsung Galaxy S 3G
 
