@@ -1,0 +1,51 @@
+{
+  "name": "reversefanboy",
+  "version": "0.0.1",
+  "description": "Replaces 'Samsung' and associated products with 'Apple' and associated products. And vice versa.",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azarbayejani/reversefanboy"
+  },
+  "keywords": [
+    "apple",
+    "samsung",
+    "joke",
+    "cloud-to-butt",
+    "wordswap"
+  ],
+  "author": "Bobby Azarbayejani",
+  "license": "BSD 3-Clause",
+  "bugs": {
+    "url": "https://github.com/azarbayejani/reversefanboy/issues"
+  },
+  "homepage": "https://github.com/azarbayejani/reversefanboy",
+  "dependencies": {
+    "babel": "^5.0.8",
+    "babel-core": "^5.0.8",
+    "babel-loader": "^5.0.0",
+    "babel-runtime": "^5.0.8",
+    "gulp": "^3.8.11",
+    "gulp-eslint": "^0.8.0",
+    "gulp-util": "^3.0.4",
+    "gulp-webpack": "^1.3.1",
+    "lodash": "^3.6.0",
+    "rimraf": "^2.3.2",
+    "vinyl": "^0.4.6",
+    "webpack": "^1.7.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^2.0.2",
+    "chai": "^2.2.0",
+    "eslint": "^0.18.0",
+    "mocha": "^2.2.1",
+    "mocha-clean": "^0.4.0",
+    "sinon": "^1.14.1"
+  }
+}
