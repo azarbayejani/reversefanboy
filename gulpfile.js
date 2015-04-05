@@ -21,7 +21,7 @@ require('./gulp/manifest');
 var buildPath = path.resolve(__dirname, 'build');
 
 function buildScripts(watch) {
-  return gulp.src('src/content_script.js')
+  return gulp.src('src/index.js')
     .pipe(gulpWebpack(
           webpackConfig({
             watch: watch,

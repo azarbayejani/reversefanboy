@@ -6,6 +6,47 @@ var translator = new Translator();
 
 describe('Translator', function() {
 	describe('#translate', function() {
+		it('should make Apple be Samsung', function() {
+			var t = {
+				nodeValue: "Apple"
+			};
+			translator.translate(t);
+			assert.equal("Samsung",t.nodeValue);
+		});
+
+		it('should make Samsung be Apple', function() {
+			var t = {
+				nodeValue: "Samsung"
+			};
+			translator.translate(t);
+			assert.equal("Apple",t.nodeValue);
+		});
+
+		it('should make APPLE be SAMSUNG', function() {
+			var t = {
+				nodeValue: "APPLE"
+			};
+			translator.translate(t);
+			assert.equal("SAMSUNG",t.nodeValue);
+		});
+
+		it('should make SAMSUNG be APPLE', function() {
+			var t = {
+				nodeValue: "SAMSUNG"
+			};
+			translator.translate(t);
+			assert.equal("APPLE",t.nodeValue);
+		});
+
+		it('should make  be Samsung (with a space after)', function() {
+			var t = {
+				nodeValue: ""
+			};
+
+			translator.translate(t);
+			assert.equal("Samsung ",t.nodeValue);
+		});
+
 		it('should make iPhone be Galaxy S', function() {
 			var t = {
 				nodeValue: "iPhone"
