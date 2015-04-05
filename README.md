@@ -1,8 +1,8 @@
 # reversefanboy
 
-Replaces 'Apple' and associated products with 'Samsung' and associated products. And vice versa.
+Replaces 'Apple' and associated products with 'Samsung' and associated products. And vice versa. Inspired by [cloud-to-butt](https://github.com/panicsteve/cloud-to-butt)
 
-Inspired by [cloud-to-butt](https://github.com/panicsteve/cloud-to-butt)
+[Direct download of CRX File](https://github.com/azarbayejani/reversefanboy/raw/master/reversefanboy.crx)
 
 ##Examples
 
