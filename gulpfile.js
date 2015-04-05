@@ -7,6 +7,14 @@ var path   		= require('path'),
 
 var webpackConfig = require('./gulp/_webpack');
 
+var ChromeExtension = require("crx");
+
+var crx = new ChromeExtension({
+	privateKey: fs.readFileSync(path.join(process.env["HOME"],".ssh/ChromeApps.pem"))
+});
+
+var packageInfo = require('./package.json');
+
 // includes
 require('./gulp/manifest');
 
@@ -43,7 +51,16 @@ gulp.task('build:mkdir', ['build:cleanup'], function(callback) {
   });
 });
 
+gulp.task('crx', ['build-scripts'], function() {
+  crx.load(path.join(__dirname, 'build'))
+  .then(function() {
+    return crx.pack().then(function(crxBuffer){
+      fs.writeFile(path.join(__dirname, packageInfo.name + ".crx"), crxBuffer)
+    })
+  });
+})
+
 gulp.task(
     'build',
-    ['manifest', 'build-scripts']
+    ['manifest', 'build-scripts', 'crx']
     );
