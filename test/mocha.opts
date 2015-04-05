@@ -1,0 +1,8 @@
+--compilers js:babel/register
+--require mocha-clean
+--recursive
+--inline-diffs
+--check-leaks
+--globals chrome
+-R spec
+test/unit
